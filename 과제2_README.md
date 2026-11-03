@@ -26,10 +26,10 @@
 ## 재현
 
 ```bash
-# 데이터 (datasets/ 는 용량 때문에 저장소에 없음)
-#   datasets/toy2box_all.hdf5            키보드 시범 20개
-#   datasets/toy2box_all_annotated.hdf5  annotate_demos.py 결과 16개
-#   datasets/toy2box_all_mimic_v1_500.hdf5  generate_dataset.py 결과 501개 (generate_parallel.sh: 3 프로세스 × 34 env)
+# 데이터 (키보드 시범 hdf5 2개는 저장소에 포함, Mimic 생성 hdf5는 용량 때문에 제외)
+#   datasets/toy2box_all.hdf5            키보드 시범 20개 (포함)
+#   datasets/toy2box_all_annotated.hdf5  annotate_demos.py 결과 16개 (포함)
+#   datasets/toy2box_all_mimic_v1_500.hdf5  generate_dataset.py 결과 501개 (generate_parallel.sh: 3 프로세스 × 34 env; 193 MB라 제외)
 python analysis/grasp_quality.py datasets/toy2box_all_mimic_v1_500.hdf5 --csv analysis/mimic500_grasp.csv   # clean/dirty 목록
 python subset_hdf5.py --input datasets/toy2box_all_mimic_v1_500.hdf5 --output datasets/mimic_dirty162.hdf5 --list analysis/mimic500_grasp_dirty.txt
 python subset_hdf5.py --input datasets/toy2box_all_mimic_v1_500.hdf5 --output datasets/mimic_clean162.hdf5 --list analysis/mimic500_grasp_clean.txt --random 162 --seed 0
@@ -59,5 +59,6 @@ python analysis/make_report_deck.py     # 발표 자료 analysis/로보틱스시
 | `subset_hdf5.py`, `merge_demos.py`, `summarize_demos.py` | 데이터셋 부분 집합·병합·요약 |
 | `analysis/` | 파지 품질 분석, 그림, 결과 수집, 발표 자료 생성 스크립트 |
 | `logs/experiments/` | 공식 play.py 평가 로그(baseline 100회 `*.play.log`, 실험 조건 19회 부분 로그 `*.play_partial.log`), 20 env 평가 로그(`fast_eval_*.log`), 실행 스크립트. 학습 로그(`*.train.log`, 약 40 MB)는 용량 때문에 제외 |
-| `datasets/*.demos.txt` | 각 학습 조건에 들어간 시범 번호 목록(clean162·dirty162·clean339·random339). hdf5 파일 자체는 용량 때문에 제외 |
+| `datasets/toy2box_all.hdf5`, `datasets/toy2box_all_annotated.hdf5` | 키보드로 직접 수집한 사람 시범 20개와 자동 주석을 통과한 16개 (각 약 7 MB) |
+| `datasets/*.demos.txt` | 각 학습 조건에 들어간 시범 번호 목록(clean162·dirty162·clean339·random339). Mimic 생성 hdf5(501개, 193 MB)와 조건별 부분 집합 hdf5는 용량 때문에 제외(이 목록과 `subset_hdf5.py`로 재생성) |
 | `WSL_과제2_실행가이드.md`, `데이터수집_가이드.md` | WSL2에서 파이프라인을 돌리는 방법 (렌더러 없이 텔레오퍼레이션 포함) |

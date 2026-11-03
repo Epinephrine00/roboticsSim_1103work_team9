@@ -1,5 +1,8 @@
 # large or generated files that must not go to GitHub (course rule: upload only the final checkpoints)
 datasets/*.hdf5
+# keyboard demos are small (about 7 MB each) and stay in the repo
+!datasets/toy2box_all.hdf5
+!datasets/toy2box_all_annotated.hdf5
 datasets/*.log
 datasets/*.txt
 logs/
