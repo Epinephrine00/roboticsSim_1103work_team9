@@ -1,0 +1,12 @@
+[16:26:46] eval logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/bc_rnn_random339_seed111/20261103143039/models/model_epoch_2000.pth
+  Successful trials: 27, out of 100 trials
+  Success rate: 0.27
+  rollouts: 100  success: 27 (27%)
+    approach   18  (25% of failures)
+    grasp      22  (30% of failures)
+    carry      23  (32% of failures)
+    place      10  (14% of failures)
+  success length: mean 357 steps, min 216, max 782
+  
+  rollout            result             steps           dropped    min_hand_toy_m        max_lift_m  min_toy_box_xy_m     grip_switches         idle_frac
+[16:51:14] evals done

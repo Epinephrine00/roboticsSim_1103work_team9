@@ -1,0 +1,57 @@
+[2026-11-03_08:14:52] train bc_rnn_clean162_seed101 on datasets/mimic_clean162.hdf5 (pid 584787)
+[2026-11-03_08:14:52] train bc_rnn_clean162_seed111 on datasets/mimic_clean162.hdf5 (pid 584789)
+[2026-11-03_08:14:52] train bc_rnn_dirty162_seed101 on datasets/mimic_dirty162.hdf5 (pid 584791)
+[2026-11-03_08:14:52] train bc_rnn_dirty162_seed111 on datasets/mimic_dirty162.hdf5 (pid 584793)
+[2026-11-03_11:46:02] trained bc_rnn_clean162_seed101 -> logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/bc_rnn_clean162_seed101/20261103081455/models/model_epoch_2000.pth
+[2026-11-03_11:46:02] trained bc_rnn_clean162_seed111 -> logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/bc_rnn_clean162_seed111/20261103081456/models/model_epoch_2000.pth
+[2026-11-03_11:46:02] trained bc_rnn_dirty162_seed101 -> logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/bc_rnn_dirty162_seed101/20261103081455/models/model_epoch_2000.pth
+[2026-11-03_11:46:02] trained bc_rnn_dirty162_seed111 -> logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/bc_rnn_dirty162_seed111/20261103081455/models/model_epoch_2000.pth
+[2026-11-03_11:46:02] fast evals + diagnosis (2 at a time)
+[11:46:02] eval logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/bc_rnn_clean162_seed101/20261103081455/models/model_epoch_2000.pth
+  Successful trials: 13, out of 100 trials
+  Success rate: 0.13
+  rollouts: 100  success: 13 (13%)
+    approach   20  (23% of failures)
+    grasp      39  (45% of failures)
+    carry      23  (26% of failures)
+    place       5  (6% of failures)
+  success length: mean 345 steps, min 260, max 675
+  
+  rollout            result             steps           dropped    min_hand_toy_m        max_lift_m  min_toy_box_xy_m     grip_switches         idle_frac
+[12:23:07] eval logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/bc_rnn_clean162_seed111/20261103081456/models/model_epoch_2000.pth
+  Successful trials: 11, out of 100 trials
+  Success rate: 0.11
+  rollouts: 100  success: 11 (11%)
+    approach   17  (19% of failures)
+    grasp      42  (47% of failures)
+    carry      19  (21% of failures)
+    place      11  (12% of failures)
+  success length: mean 406 steps, min 270, max 769
+  
+  rollout            result             steps           dropped    min_hand_toy_m        max_lift_m  min_toy_box_xy_m     grip_switches         idle_frac
+[12:57:40] evals done
+[11:46:02] eval logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/bc_rnn_dirty162_seed101/20261103081455/models/model_epoch_2000.pth
+  Successful trials: 20, out of 100 trials
+  Success rate: 0.2
+  rollouts: 100  success: 20 (20%)
+    approach   26  (32% of failures)
+    grasp      39  (49% of failures)
+    carry      11  (14% of failures)
+    place       4  (5% of failures)
+  success length: mean 375 steps, min 235, max 795
+  
+  rollout            result             steps           dropped    min_hand_toy_m        max_lift_m  min_toy_box_xy_m     grip_switches         idle_frac
+[12:23:27] eval logs/robomimic/Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0/bc_rnn_dirty162_seed111/20261103081455/models/model_epoch_2000.pth
+  Successful trials: 23, out of 100 trials
+  Success rate: 0.23
+  rollouts: 100  success: 23 (23%)
+    approach   15  (19% of failures)
+    grasp      47  (61% of failures)
+    carry      12  (16% of failures)
+    place       3  (4% of failures)
+  success length: mean 339 steps, min 216, max 597
+  
+  rollout            result             steps           dropped    min_hand_toy_m        max_lift_m  min_toy_box_xy_m     grip_switches         idle_frac
+[12:57:59] evals done
+[2026-11-03_12:57:59] official play.py evals (all in parallel)
+[2026-11-03_14:29:49] official evals of the 4 experiment checkpoints STOPPED by hand at ~19/100 trials (CPU/GPU budget; the report uses the 20-env numbers). Partial logs: *.play_partial.log

@@ -1,0 +1,152 @@
+{
+ "clean162": {
+  "official": {},
+  "fast": {
+   "mean_std": "12.0 ± 1.0 %",
+   "mean": 12.0,
+   "101": "13 / 100",
+   "111": "11 / 100",
+   "grasp_carry_share": "70% (123/176)",
+   "stages": {
+    "approach": 37,
+    "grasp": 81,
+    "carry": 42,
+    "place": 16
+   },
+   "flips_fail_median": "9",
+   "flips_success_median": "2",
+   "flips_fail_ge4": "65%",
+   "flips_grasp_median": "11",
+   "first_grasp_ok": "67/161 (42%)",
+   "recovery": "15/94 (16%)",
+   "success_via_recovery": "4/24",
+   "success_one_close": "15/24"
+  }
+ },
+ "dirty162": {
+  "official": {},
+  "fast": {
+   "mean_std": "21.5 ± 1.5 %",
+   "mean": 21.5,
+   "101": "20 / 100",
+   "111": "23 / 100",
+   "grasp_carry_share": "69% (109/157)",
+   "stages": {
+    "approach": 41,
+    "grasp": 86,
+    "carry": 23,
+    "place": 7
+   },
+   "flips_fail_median": "11",
+   "flips_success_median": "2",
+   "flips_fail_ge4": "74%",
+   "flips_grasp_median": "15",
+   "first_grasp_ok": "44/159 (28%)",
+   "recovery": "30/115 (26%)",
+   "success_via_recovery": "17/43",
+   "success_one_close": "22/43"
+  }
+ },
+ "baseline": {
+  "official": {
+   "101": "19 / 100",
+   "111": "27 / 100",
+   "mean_std": "23.0 ± 4.0 %",
+   "mean": 23.0
+  },
+  "fast": {
+   "mean_std": "27.5 ± 0.5 %",
+   "mean": 27.5,
+   "101": "28 / 100",
+   "111": "27 / 100",
+   "grasp_carry_share": "64% (93/145)",
+   "stages": {
+    "approach": 40,
+    "grasp": 44,
+    "carry": 49,
+    "place": 12
+   },
+   "flips_fail_median": "5",
+   "flips_success_median": "2",
+   "flips_fail_ge4": "59%",
+   "flips_grasp_median": "8",
+   "first_grasp_ok": "87/160 (54%)",
+   "recovery": "29/73 (40%)",
+   "success_via_recovery": "12/55",
+   "success_one_close": "39/55"
+  }
+ },
+ "clean339": {
+  "official": {},
+  "fast": {
+   "mean_std": "21.0 ± 0.0 %",
+   "mean": 21.0,
+   "101": "21 / 100",
+   "111": "21 / 100",
+   "grasp_carry_share": "61% (96/158)",
+   "stages": {
+    "approach": 39,
+    "grasp": 53,
+    "carry": 43,
+    "place": 23
+   },
+   "flips_fail_median": "6",
+   "flips_success_median": "2",
+   "flips_fail_ge4": "62%",
+   "flips_grasp_median": "11",
+   "first_grasp_ok": "87/161 (54%)",
+   "recovery": "18/74 (24%)",
+   "success_via_recovery": "8/42",
+   "success_one_close": "27/42"
+  }
+ },
+ "random339": {
+  "official": {},
+  "fast": {
+   "mean_std": "26.0 ± 1.0 %",
+   "mean": 26.0,
+   "101": "25 / 100",
+   "111": "27 / 100",
+   "grasp_carry_share": "69% (102/148)",
+   "stages": {
+    "approach": 30,
+    "grasp": 60,
+    "carry": 42,
+    "place": 16
+   },
+   "flips_fail_median": "6",
+   "flips_success_median": "2",
+   "flips_fail_ge4": "63%",
+   "flips_grasp_median": "8",
+   "first_grasp_ok": "84/168 (50%)",
+   "recovery": "20/84 (24%)",
+   "success_via_recovery": "5/52",
+   "success_one_close": "34/52"
+  }
+ },
+ "result_bullets": [
+  "성공률(20 env 평가): clean162 12.0 ± 1.0 % vs dirty162 21.5 ± 1.5 % → 차이 -9.5 %p (기준 10 %p)",
+  "파지·운반 실패 비율: clean 70% (123/176) vs dirty 69% (109/157)",
+  "실패 rollout의 그리퍼 전환 중앙값: clean 9 vs dirty 11 (4회 이상 65% vs 74%)",
+  "첫 닫기로 2초 안에 든 비율: clean 67/161 (42%) vs dirty 44/159 (28%)",
+  "첫 파지 실패 뒤 다시 닫아 들어 올린(회복) 비율: clean 15/94 (16%) vs dirty 30/115 (26%); 회복을 거친 성공 4/24 vs 17/43",
+  "참고: baseline 501개 27.5 ± 0.5 %"
+ ],
+ "verdict": "기각. 깨끗한 파지 시범만 배운 정책이 지저분한 시범을 배운 정책보다 성공률이 낮았다 (20 env 평가 12.0 ± 1.0 % vs 21.5 ± 1.5 %, 두 seed 모두 같은 방향; 공식 play.py 결과는 결과 표). 사전 기준(깨끗한 쪽이 10 %p 이상 높고 전환이 줄어야 지지)과 반대 방향이다.",
+ "followup_bullets": [
+  "성공률(20 env 평가): clean339 21.0 ± 0.0 % vs random339 26.0 ± 1.0 % → 차이 -5.0 %p",
+  "첫 닫기로 2초 안에 든 비율: clean 87/161 (54%) vs random 84/168 (50%)",
+  "첫 파지 실패 뒤 회복: clean 18/74 (24%) vs random 20/84 (24%); 회복을 거친 성공 8/42 vs 5/52",
+  "파지 실패의 전환 중앙값: clean 11 vs random 8",
+  "판정: random339 26.0 ± 1.0 % ≥ clean339 21.0 ± 0.0 % (차이 +5.0 %p). 시범 개수 339에서도 파지 품질 기준 선별은 성공률에 도움이 되지 않음. 실험 1의 결론 유지"
+ ],
+ "followup_verdict": "random339 26.0 ± 1.0 % ≥ clean339 21.0 ± 0.0 % (차이 +5.0 %p). 시범 개수 339에서도 파지 품질 기준 선별은 성공률에 도움이 되지 않음. 실험 1의 결론 유지",
+ "insight_bullets": [
+  "지저분한 시범은 두 가지를 같이 가르친다. 첫 파지의 정밀도는 떨어지고(첫 닫기로 바로 든 비율 28 % vs 42 %) 그리퍼 전환도 늘지만(파지 실패의 전환 중앙값 15 vs 11), 첫 파지가 실패한 뒤 다시 닫아 들어 올리는 회복이 는다(26 % vs 16 %). dirty 성공 43건 중 17건이 회복을 거친 성공, clean은 24건 중 4건.",
+  "깨끗한 시범만 배운 정책은 '첫 파지 실패' 상태를 시범에서 본 적이 없어 거기서 열기/닫기 사이를 오가기만 하고 다시 쥐지 못한다. 그리퍼 반복 전환은 지저분한 시범을 흉내 낸 것이 아니라 시범에 없는 상태에 빠졌을 때 나오는 증상이었다.",
+  "따라서 재파지·미끄러짐 구간은 걸러낼 나쁜 습관이 아니라 실패 상태에서의 회복 데이터로 봐야 한다. 후속 실험(clean339 vs random339)은 시범 개수를 늘려도 이 결론이 유지되는지 확인한다."
+ ],
+ "submit_ckpt_text": "제출 체크포인트는 생성 시범 501개 전부로 학습한 baseline 모델의 seed 101·111 최종 체크포인트(epoch 2000)이며, 저장소의 checkpoints/bc_rnn_seed101/model_epoch_2000.pth 와 checkpoints/bc_rnn_seed111/model_epoch_2000.pth 에 있다. 평가 명령은 play_command.txt 에 강의자료 44쪽 형식으로 적었다."
+}
+wrote analysis/fig_experiment.png
+wrote analysis/fig_followup.png

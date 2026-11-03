@@ -1,0 +1,437 @@
+[3gH    H    H    H    H    H    H    H    H    H    H    H    H    H    H    H    H    H    H    H   [INFO] Using python from: /home/dpvpd/miniforge3/envs/lerobot-arena/bin/python
+[INFO] Headless mode: True
+[INFO] Video recording: False
+[INFO] Cameras enabled: False
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/dpvpd/IsaacLab_RS/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/dpvpd/miniforge3/envs/lerobot-arena/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/dpvpd/miniforge3/envs/lerobot-arena/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261103_125759.log
+2026-11-03T03:58:00Z [303ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-03T03:58:01Z [1,204ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-03T03:58:01Z [1,546ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-11-03T03:58:10Z [10,318ms] [Warning] [gpu.foundation.plugin] nvidia-smi not found in '/usr/bin/'
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 0             | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.18.54.1-microsoft-standard-WSL2
+| XServer Vendor: The X.Org Foundation, XServer Version: 12401012 (1.24.1.12)
+| Processor: AMD Ryzen 9 5900XT 16-Core Processor
+| Cores: 16 | Logical Cores: 32
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 32055 | Free Memory: 24299
+| Total Page/Swap (MB): 8192 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-03T03:58:10Z [10,460ms] [Error] [gpu.foundation.plugin] No device could be created. Some known system issues:
+- The driver is not installed properly and requires a clean re-install.
+- Your GPUs do not support RayTracing: DXR or Vulkan ray_tracing, or hardware is excluded due to performance.
+- The driver cannot enumerate any GPU: driver, display, TCC mode or a docker issue. For Vulkan, test it with Vulkaninfo tool from Vulkan SDK, instead of nvidia-smi.
+- For Ubuntu, it requires server-xorg-core 1.20.7+ and a display to work without --no-window.
+- For Linux dockers, the setup is not complete. Install the latest driver, xServer and NVIDIA container runtime.
+
+2026-11-03T03:58:10Z [10,480ms] [Error] [gpu.foundation.plugin] Invalid getDeviceInfo parameters.
+2026-11-03T03:58:10Z [10,480ms] [Warning] [omni.physx.foundation.plugin] PhysXFoundation: Couldn't get driver version, failed to getDeviceInfo
+2026-11-03T03:58:10Z [10,480ms] [Warning] [omni.physx.foundation.plugin] PhysXFoundation: Unable to get IGpuFoundation, GpuDevices or Graphics!
+2026-11-03T03:58:10Z [10,559ms] [Warning] [omni.kvdb.plugin] Disabling key-value database because another kit process is locking it
+ROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/dpvpd/miniforge3/envs/lerobot-arena/lib/python3.11/site-packages/robomimic/scripts/setup_macros.py
+)
+2026-11-03T03:58:11Z [11,507ms] [Warning] [gpu.foundation.plugin] nvidia-smi not found in '/usr/bin/'
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 0             | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.18.54.1-microsoft-standard-WSL2
+| XServer Vendor: The X.Org Foundation, XServer Version: 12401012 (1.24.1.12)
+| Processor: AMD Ryzen 9 5900XT 16-Core Processor
+| Cores: 16 | Logical Cores: 32
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 32055 | Free Memory: 24068
+| Total Page/Swap (MB): 8192 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-03T03:58:11Z [11,575ms] [Error] [gpu.foundation.plugin] No device could be created. Some known system issues:
+- The driver is not installed properly and requires a clean re-install.
+- Your GPUs do not support RayTracing: DXR or Vulkan ray_tracing, or hardware is excluded due to performance.
+- The driver cannot enumerate any GPU: driver, display, TCC mode or a docker issue. For Vulkan, test it with Vulkaninfo tool from Vulkan SDK, instead of nvidia-smi.
+- For Ubuntu, it requires server-xorg-core 1.20.7+ and a display to work without --no-window.
+- For Linux dockers, the setup is not complete. Install the latest driver, xServer and NVIDIA container runtime.
+
+2026-11-03T03:58:11Z [11,585ms] [Warning] [gpu.foundation.plugin] nvidia-smi not found in '/usr/bin/'
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 0             | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.18.54.1-microsoft-standard-WSL2
+| XServer Vendor: The X.Org Foundation, XServer Version: 12401012 (1.24.1.12)
+| Processor: AMD Ryzen 9 5900XT 16-Core Processor
+| Cores: 16 | Logical Cores: 32
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 32055 | Free Memory: 24061
+| Total Page/Swap (MB): 8192 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-03T03:58:11Z [11,650ms] [Error] [gpu.foundation.plugin] No device could be created. Some known system issues:
+- The driver is not installed properly and requires a clean re-install.
+- Your GPUs do not support RayTracing: DXR or Vulkan ray_tracing, or hardware is excluded due to performance.
+- The driver cannot enumerate any GPU: driver, display, TCC mode or a docker issue. For Vulkan, test it with Vulkaninfo tool from Vulkan SDK, instead of nvidia-smi.
+- For Ubuntu, it requires server-xorg-core 1.20.7+ and a display to work without --no-window.
+- For Linux dockers, the setup is not complete. Install the latest driver, xServer and NVIDIA container runtime.
+
+2026-11-03T03:58:11Z [11,655ms] [Error] [omni.gpu_foundation_factory.plugin] Failed to create any GPU devices, including an attempt with compatibility mode.
+sh: 1: zenity: not found
+2026-11-03T03:58:11Z [11,883ms] [Error] [omni.kit.renderer.plugin] GPU Foundation is not initialized!
+2026-11-03T03:58:11Z [11,906ms] [Error] [omni.kit.imgui_renderer.plugin] _prepareDefaultWindow: invalid device attached to the default window!
+2026-11-03T03:58:12Z [12,643ms] [Warning] [omni.graph.visualization.nodes._impl.extension] No Viewport Window to add omni.graph.visualization.nodes-2.1.3 scene to
+[INFO]: Parsing configuration from: isaaclab_tasks.manager_based.manipulation.place.config.agibot.place_toy2box_rmp_rel_env_cfg:RmpFlowAgibotPlaceToy2BoxEnvCfg
+2026-11-03T03:58:12Z [13,003ms] [Warning] [isaaclab.envs.manager_based_env] Seed not set for the environment. The environment creation may not be deterministic.
+2026-11-03T03:58:12Z [13,012ms] [Warning] [omni.graph.core.plugin] OmniGraphSettings::getCudaDeviceOrdinal: unable to get a valid CUDA device id from the renderer. Defaulting to GPU0.
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : None
+	Physics step-size     : 0.016666666666666666
+	Rendering step-size   : 0.1
+	Environment step-size : 0.05
+2026-11-03T03:58:14Z [14,813ms] [Warning] [rtx.neuraylib.plugin] [GPU:RENDER]   0.1   GPU    rend warn : It appears that the "nvidia" kernel module is not loaded.
+2026-11-03T03:58:14Z [14,813ms] [Warning] [rtx.neuraylib.plugin] [GPU:RENDER]   0.1   GPU    rend warn : It appears that there are no "nvidia" device nodes. This configuration is unlikely to work at all. Verify that your runlevel is sufficient and "nvidia" device nodes are present, e.g., /dev/nvidia0.
+[INFO]: Time taken for scene creation : 2.056127 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 3.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+2026-11-03T03:58:16Z [16,966ms] [Warning] [omni.physx.fabric.plugin] FabricManager::initializePointInstancer mismatched prototypes on point instancer: /Visuals/ContactSensor.
+[INFO]: Time taken for simulation start : 1.939675 seconds
+[INFO] Command Manager:  <CommandManager> contains 0 active terms.
++------------------------+
+|  Active Command Terms  |
++--------+-------+-------+
+| Index  | Name  |  Type |
++--------+-------+-------+
++--------+-------+-------+
+
+[INFO] Event Manager:  <EventManager> contains 1 active terms.
++------------------------------------+
+| Active Event Terms in Mode: 'reset' |
++---------+--------------------------+
+|  Index  | Name                     |
++---------+--------------------------+
+|    0    | reset_all                |
+|    1    | init_toy_position        |
+|    2    | init_box_position        |
++---------+--------------------------+
+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+
+[INFO]: Loading RMPFlow controller URDF from: https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/IsaacLab/Controllers/RmpFlowAssets/agibot/agibot.urdf
+[INFO] Action Manager:  <ActionManager> contains 2 active terms.
++------------------------------------+
+|   Active Action Terms (shape: 7)   |
++-------+----------------+-----------+
+| Index | Name           | Dimension |
++-------+----------------+-----------+
+|   0   | arm_action     |         6 |
+|   1   | gripper_action |         1 |
++-------+----------------+-----------+
+
+[INFO] Observation Manager: <ObservationManager> contains 2 groups.
++----------------------------------------------+
+| Active Observation Terms in Group: 'policy'  |
++--------+----------------------------+--------+
+| Index  | Name                       | Shape  |
++--------+----------------------------+--------+
+|   0    | actions                    |  (7,)  |
+|   1    | joint_pos                  | (34,)  |
+|   2    | joint_vel                  | (34,)  |
+|   3    | toy_truck_positions        |  (3,)  |
+|   4    | toy_truck_orientations     |  (4,)  |
+|   5    | box_positions              |  (3,)  |
+|   6    | box_orientations           |  (4,)  |
+|   7    | eef_pos                    |  (3,)  |
+|   8    | eef_quat                   |  (4,)  |
+|   9    | gripper_pos                |  (2,)  |
++--------+----------------------------+--------+
++--------------------------------------------+
+| Active Observation Terms in Group: 'subtask_terms' |
++--------------+--------------+--------------+
+|    Index     | Name         |    Shape     |
++--------------+--------------+--------------+
+|      0       | grasp        |      ()      |
++--------------+--------------+--------------+
+
+[INFO] Termination Manager:  <TerminationManager> contains 1 active terms.
++---------------------------------------+
+|        Active Termination Terms       |
++-------+--------------------+----------+
+| Index | Name               | Time Out |
++-------+--------------------+----------+
+|   0   | toy_truck_dropping |  False   |
++-------+--------------------+----------+
+
+[INFO] Reward Manager:  <RewardManager> contains 0 active terms.
++-----------------------+
+|  Active Reward Terms  |
++-------+------+--------+
+| Index | Name | Weight |
++-------+------+--------+
++-------+------+--------+
+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 0 active terms.
++----------------------+
+| Active Curriculum Terms |
++-----------+----------+
+|   Index   | Name     |
++-----------+----------+
++-----------+----------+
+
+[INFO]: Completed setting up the environment...
+Setting seed: 42
+[INFO] Starting trial 0
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 0: False
+
+[INFO] Starting trial 1
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 1: True
+
+[INFO] Starting trial 2
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 2: False
+
+[INFO] Starting trial 3
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 3: True
+
+[INFO] Starting trial 4
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 4: False
+
+[INFO] Starting trial 5
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 5: False
+
+[INFO] Starting trial 6
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 6: False
+
+[INFO] Starting trial 7
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 7: False
+
+[INFO] Starting trial 8
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 8: False
+
+[INFO] Starting trial 9
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 9: False
+
+[INFO] Starting trial 10
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 10: True
+
+[INFO] Starting trial 11
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 11: False
+
+[INFO] Starting trial 12
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 12: False
+
+[INFO] Starting trial 13
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 13: False
+
+[INFO] Starting trial 14
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 14: False
+
+[INFO] Starting trial 15
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 15: True
+
+[INFO] Starting trial 16
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 16: False
+
+[INFO] Starting trial 17
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 17: False
+
+[INFO] Starting trial 18
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 18: False
+
+[INFO] Starting trial 19
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 19: False
+
+[INFO] Starting trial 20
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 20: False
+
+[INFO] Starting trial 21
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+[INFO] Trial 21: False
+
+[INFO] Starting trial 22
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['eef_pos', 'toy_truck_positions', 'box_orientations', 'eef_quat', 'box_positions', 'gripper_pos', 'toy_truck_orientations']
+using obs modality: rgb with keys: []
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+2026-11-03T05:25:08Z [5,228,731ms] [Error] [omni.physx.plugin] CUDA libs are present, but no suitable CUDA GPU was found!

@@ -1,0 +1,4 @@
+[2026-11-03_12:27:12] train bc_rnn_clean339_seed101 (pid 736052)
+[2026-11-03_12:27:12] train bc_rnn_random339_seed101 (pid 736054)
+[2026-11-03_14:30:33] train bc_rnn_clean339_seed111 started by hand in parallel (pid 793799)
+[2026-11-03_14:30:33] train bc_rnn_random339_seed111 started by hand in parallel (pid 793802)

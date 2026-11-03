@@ -1,0 +1,12 @@
+[2026-11-03_15:10:50] seed 101 pair trained -> fast evals
+    Successful trials: 21, out of 100 trials
+    Successful trials: 25, out of 100 trials
+[2026-11-03_15:47:46] seed 101 pair evaluated
+[2026-11-03_16:26:46] seed 111 pair trained -> fast evals
+    Successful trials: 21, out of 100 trials
+    Successful trials: 27, out of 100 trials
+[2026-11-03_16:51:14] seed 111 pair evaluated
+[2026-11-03_16:51:16] results.json rebuilt
+[2026-11-03_16:51:16] report deck rebuilt
+[2026-11-03_16:51:17] old-style deck rebuilt
+[2026-11-03_16:51:17] FOLLOWUP EVAL DONE

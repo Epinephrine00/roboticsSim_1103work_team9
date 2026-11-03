@@ -1,0 +1,6 @@
+# bc_rnn_seed101 (train seed 101, epoch 2000)
+./isaaclab.sh -p scripts/imitation_learning/robomimic/play.py --task Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0 --checkpoint ./checkpoints/bc_rnn_seed101/model_epoch_2000.pth --num_rollouts 100 --horizon 800 --seed 42 --headless
+
+# bc_rnn_seed111 (train seed 111, epoch 2000)
+./isaaclab.sh -p scripts/imitation_learning/robomimic/play.py --task Isaac-Place-Toy2Box-Agibot-Right-Arm-RmpFlow-v0 --checkpoint ./checkpoints/bc_rnn_seed111/model_epoch_2000.pth --num_rollouts 100 --horizon 800 --seed 42 --headless
+
